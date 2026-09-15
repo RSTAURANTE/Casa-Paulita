@@ -132,6 +132,7 @@ function imagenItem(item) {
     .replace(/^-|-$/g, '')
     .toLowerCase();
   const nombres = [nombreArchivo, nombreNormalizado];
+  if (item.id === 'huevos-al-albanil') nombres.push('huevos-al-albañil');
   if (item.id === 'huevos-divorciados') nombres.push('huevos-divorsiados');
   if (item.id === 'parrilla-de-corte-para-cuatro') nombres.push('parrilla-de-corte-para-cuatro-personas.webp');
   if (item.id === 'papas-a-la-francesa-compa') nombres.push('papas-a-la-francesa-compartir');
