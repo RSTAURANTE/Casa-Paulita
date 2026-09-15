@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Paulita — Sabor casero, hecho con amor</title>
+  <meta name="description" content="Casa Paulita, Centro Histórico de la Ciudad de México. Chilaquiles, molletes, café de olla y más, con sabor casero desde 1987.">
+
+  <link rel="icon" type="image/png" href="assets/images/logo-badge.png">
+  <link rel="manifest" href="assets/icons/site.webmanifest"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Cargando Casa Paulita">
+    <div class="page-loader__content">
+      <div class="page-loader__mark">
+        <span></span>
+        <img src="assets/images/logo-badge.png" alt="Casa Paulita" width="116" height="116">
+      </div>
+      <p class="page-loader__name">Casa <em>Paulita</em></p>
+      <p class="page-loader__message">Sabor casero, hecho con amor</p>
+    </div>
+  </div>
+
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="#inicio" class="navbar__brand">
+        <img src="assets/images/logo-badge.png" alt="Desayunos Paulita" width="48" height="48" class="navbar__logo">
+        <span class="navbar__name">Casa <em>Paulita</em></span>
+      </a>
+
+      <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="navbar__menu" id="navMenu">
+        <ul class="navbar__links">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#menu" class="nav-link">Menú</a></li>
+          <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="navbar__search-btn" id="searchToggle" aria-label="Abrir buscador">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><line x1="16.2" y1="16.2" x2="21" y2="21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <span>Buscar</span>
+        </button>
+      </div>
+    </nav>
+
+
+    <div class="search-panel" id="searchPanel">
+      <div class="search-panel__inner">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><line x1="16.2" y1="16.2" x2="21" y2="21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <input type="search" id="searchInput" placeholder="Busca chilaquiles, café, molletes…" aria-label="Buscar en el menú">
+        <button id="searchClose" aria-label="Cerrar buscador">&times;</button>
+      </div>
+      <div class="search-panel__results" id="searchResults"></div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__papel-picado" aria-hidden="true"></div>
+
+      <div class="hero__container">
+        <div class="hero__text">
+          <p class="eyebrow">Centro Histórico · Cdad. de México</p>
+          <h1 class="hero__title">Tus mejores días<br><span>comienzan aquí.</span></h1>
+          <p class="hero__lead">Desayunos caseros, hechos con la misma receta y el mismo cariño de siempre. Chilaquiles, molletes, café de olla y los antojitos que ya extrañabas.</p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary">Ver el menú</a>
+            <a href="#ubicacion" class="btn btn--ghost">Cómo llegar</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>9:00am–10:00pm</strong><span>Todos los días</span></li>
+            <li><strong>Centro Histórico</strong><span>C. de Monte de Piedad 11-Piso 2</span></li>
+            <li><strong>100% casero</strong><span>Receta de familia</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__logo-wrap">
+          <img src="assets/images/logo-badge.png" alt="Desayunos Paulita — Buenos días, mejores días comienzan aquí" class="hero__logo" width="486" height="481">
+        </div>
+      </div>
+
+      <a href="#menu" class="hero__scroll" aria-label="Bajar al menú">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 4v15M12 19l-6-6M12 19l6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+
+    <section class="karaoke" id="karaoke">
+      <div class="karaoke__content" data-reveal>
+        <p class="eyebrow">De  viernes a domingo</p>
+        <h2>Desayuna y canta con nosotros</h2>
+        <p>Entre semana el desayuno viene con música: disfruta nuestro karaoke de viernes a domingo.</p>
+        <span class="karaoke__schedule">Karaoke · Viernes a domingo</span>
+      </div>
+    </section>
+
+
+    <section class="about" id="nosotros">
+      <div class="about__container">
+        <div class="about__art" aria-hidden="true" data-reveal>
+          <img src="assets/images/logo_f.png" alt="" loading="lazy">
+        </div>
+        <div class="about__copy" data-reveal>
+          <p class="eyebrow eyebrow--dark">Nuestra historia</p>
+          <h2>Una cocina tradicional mexicana, con las puertas siempre abiertas</h2>
+          <p> Nuestra historia comenzó en una cocina de casa, de esas donde el comal nunca se enfría. Aquí el día
+            se vive en tres tiempos: por la mañana, celebramos el desayuno con ingredientes frescos, salsas
+             molcajeteadas y un café de olla que se sirve como antes. Al mediodía, abrimos las puertas para
+             compartir el sabor de nuestra comida tradicional, con recetas que abrazan. Y cuando cae la noche,
+              el ambiente se transforma: el comal da paso a las risas, los tragos bien servidos y las canciones
+              que todos llevamos dentro en nuestro espacio de karaoke y bar. Un mismo lugar,
+               tres formas de disfrutar.</p>
+          <div class="about__stats">
+
+            <div><strong>+15</strong><span>platillos en el menú</span></div>
+            <div><strong>100%</strong><span>casero, sin atajos</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="menu-section" id="menu">
+      <div class="menu-section__header">
+        <p class="eyebrow eyebrow--dark">Lo que servimos</p>
+        <h2>Nuestro menú</h2>
+        <p class="menu-section__lead">Descubre nuestros desayunos, la cocina y el karaoke de Paulita.</p>
+      </div>
+
+      <div class="menu-dropdowns" id="menuFilters" aria-label="Secciones del menú">
+        <details class="menu-dropdown" data-menu-section="desayunos">
+          <summary>Desayunos Paulita <small>9:00 a.m. – 12:00 p.m.</small><span aria-hidden="true">+</span></summary>
+          <div class="menu-groups" id="menuGridDesayunos"></div>
+        </details>
+
+        <details class="menu-dropdown" data-menu-section="cocina">
+          <summary>La cocina de Paulita <small>12:00 p.m. – 4:00 p.m.</small><span aria-hidden="true">+</span></summary>
+          <div class="menu-groups" id="menuGridCocina"></div>
+        </details>
+
+        <details class="menu-dropdown" data-menu-section="karaoke">
+          <summary>El karaoke de Paulita <small>4:00 p.m. – 10:00 p.m.</small><span aria-hidden="true">+</span></summary>
+          <div class="menu-groups" id="menuGridKaraoke"></div>
+        </details>
+      </div>
+
+      <p class="menu-empty" id="menuEmpty" hidden>No encontramos ningún platillo con esa búsqueda. Prueba con otra palabra 🌵</p>
+    </section>
+
+
+    <section class="location" id="ubicacion">
+      <div class="location__container">
+        <div class="location__info">
+          <p class="eyebrow">Visítanos</p>
+          <h2>Te esperamos en el corazón de la ciudad</h2>
+
+          <div class="location__card" data-reveal>
+            <div class="location__row">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 22s7-7.58 7-13A7 7 0 1 0 5 9c0 5.42 7 13 7 13Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <div>
+                <h3>Dirección</h3>
+                <p>C. de Monte de Piedad 11-Piso 2, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06000 Ciudad de México, CDMX</p>
+
+              </div>
+            </div>
+            <div class="location__row">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <div>
+                <h3>Horario</h3>
+                <p>Todos los días · 9:00 a.m. – 10:00 p.m.</p>
+              </div>
+            </div>
+            <div class="location__row">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v4a2 2 0 0 1-2 2C9.2 22 2 14.8 2 7a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <div>
+                <h3>Contacto</h3>
+                <p>WhatsApp: +52 55 6676 5158</p>
+                <h3>Correo Electrónico</h3>
+                <p>desayunospaulitacdmx@gmail.com</p>
+              </div>
+            </div>
+
+            <a class="btn btn--primary btn--block" id="mapsBtn" href="https://www.google.com/maps/search/?api=1&query=Casa+Paulita+Centro+Hist%C3%B3rico+Ciudad+de+M%C3%A9xico" target="_blank" rel="noopener">
+              Abrir en Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="location__map" data-reveal>
+          <iframe
+            title="Mapa de Casa Paulita"
+            src="https://www.google.com/maps?q=Casa+Paulita+Centro+Hist%C3%B3rico+Ciudad+de+M%C3%A9xico&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+        <div class="contact__copy">
+          <p class="eyebrow">Escríbenos</p>
+          <h2>¿Dudas, pedidos especiales o eventos?</h2>
+          <p>Mándanos un mensaje y te contestamos lo antes posible. También puedes visitarnos directo, siempre hay una mesa y café caliente.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__brand">
+        <img src="assets/images/logo-badge.png" alt="Casa Paulita" width="56" height="56">
+        <p>Casa Paulita</p>
+        <p class="site-footer__tagline">Sabor casero, hecho con amor.</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Explora</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3>Visítanos</h3>
+        <p>C. de Monte de Piedad 11-Piso 2, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc<br>06000, Ciudad de México</p>
+        <p>9:00 a.m. – 10:00 p.m., todos los días</p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; <span id="year"></span> Casa Paulita. Todos los derechos reservados. </p>
+      <p> Desarrolado por Stefany Rubi Murillo Loria</p>
+    </div>
+  </footer>
+
+  <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M12 5l-6 6M12 5l6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/script.js?v=4"></script>
+</body>
+</html>

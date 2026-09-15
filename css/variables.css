@@ -1,0 +1,73 @@
+
+
+:root {
+
+  --crema: #F8DCA9;
+  --negro: #050A0F;
+  --verde-petroleo: #043338;
+  --morado: #2C0C3F;
+  --verde-cactus: #769009;
+  --rosa: #D73C7F;
+  --naranja: #E2960C;
+  --azul-petroleo: #106079;
+  --terracota: #C04010;
+
+
+  --crema-suave: #FCEBC7;
+  --crema-fuerte: #F1CB84;
+  --morado-suave: #4A1A63;
+  --verde-petroleo-suave: #0A4A50;
+  --overlay-oscuro: rgba(5, 10, 15, 0.55);
+
+
+  --color-bg: var(--crema);
+  --color-bg-alt: var(--crema-suave);
+  --color-superficie: #FFFDF7;
+  --color-texto: var(--negro);
+  --color-texto-suave: #3C3630;
+  --color-marca: var(--morado);
+  --color-marca-oscuro: var(--verde-petroleo);
+  --color-acento: var(--naranja);
+  --color-acento-2: var(--rosa);
+  --color-detalle: var(--verde-cactus);
+  --color-borde: rgba(44, 12, 63, 0.18);
+
+
+  --fuente-display: 'Fredoka', system-ui, sans-serif;
+  --fuente-cuerpo: 'Nunito Sans', system-ui, sans-serif;
+  --fuente-manuscrita: 'Caveat', cursive;
+
+
+  --fs-h1: clamp(2.4rem, 5vw + 1rem, 4.2rem);
+  --fs-h2: clamp(1.9rem, 3vw + 1rem, 2.8rem);
+  --fs-h3: clamp(1.2rem, 1.2vw + 1rem, 1.5rem);
+  --fs-lead: clamp(1.05rem, 0.6vw + 0.9rem, 1.25rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 7rem;
+
+
+  --ancho-maximo: 1220px;
+  --radio-sm: 10px;
+  --radio-md: 18px;
+  --radio-lg: 28px;
+
+
+  --sombra-suave: 0 8px 24px rgba(5, 10, 15, 0.10);
+  --sombra-media: 0 16px 40px rgba(5, 10, 15, 0.16);
+  --sombra-marca: 0 10px 30px rgba(44, 12, 63, 0.25);
+
+
+  --transicion-rapida: 0.18s ease;
+  --transicion-media: 0.32s cubic-bezier(.25,.8,.35,1);
+
+
+  --altura-header: 78px;
+}
